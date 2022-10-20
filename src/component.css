@@ -1,0 +1,88 @@
+:root {
+--softBlue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/*Neutral*/
+--veryDarkBlue-mainBG: hsl(217, 54%, 11%);
+--veryDarkBlue-cardBG: hsl(216, 50%, 16%);
+--veryDarkBlue-line: hsl(215, 32%, 27%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	 font-family: 'Outfit', sans-serif;
+	 color: white;
+}
+
+#container {
+	background-color: var(--veryDarkBlue-cardBG);
+	border-radius: 3%;
+	width: 23.3em;
+}
+
+#image {
+	background: url('./assets/image-equilibrium.jpg') no-repeat;
+	background-size: 100% 100%;
+	margin: 1.2em;
+	width: 90%;
+	height: 37vh;
+	border-radius: 3%;
+	max-width: 100%;
+}
+
+#textContainer {
+	margin: 1.5em;
+}
+
+#textContainer h2 {
+	margin-bottom: 0.5em;
+}
+
+#textContainer p {
+	line-height: 1.8em;
+	opacity: 0.6;
+	font-size: 18px;
+}
+
+#textContainer h1:hover{
+	color:var(--cyan);
+}
+
+#icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 1em;
+}
+
+hr {
+	border: 1px solid var(--veryDarkBlue-line);
+	width: 88%;
+	margin-left: 1.4em;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 1em 1.4em 1.5em 1.6em;
+}
+
+footer img {
+	width: 10%;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-right: 1.5em;
+}
+
+footer p {
+	opacity: 0.6;
+}
+
+#name {
+	opacity: 1;
+}

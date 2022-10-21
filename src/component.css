@@ -34,6 +34,13 @@ body {
 	max-width: 100%;
 }
 
+#image:hover {
+	background: url('./assets/icon-view.svg') no-repeat, url('./assets/image-equilibrium.jpg') no-repeat;
+	background-size: 15% 15%, 100% 100%, 100% 100%;
+	background-position: center center, top center;
+	background-color: rgba(0, 255, 247, 0.4);
+	background-blend-mode: lighten;
+}
 #textContainer {
 	margin: 1.5em;
 }
@@ -48,7 +55,7 @@ body {
 	font-size: 18px;
 }
 
-#textContainer h1:hover{
+#textContainer h2:hover{
 	color:var(--cyan);
 }
 
@@ -56,7 +63,15 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-bottom: 1em;
+	margin: 0 -1.5em 1em -1.5em;
+}
+
+#eth {
+	color: var(--cyan);
+}
+
+#icons p {
+	margin-left: -6em;
 }
 
 hr {
@@ -85,4 +100,14 @@ footer p {
 
 #name {
 	opacity: 1;
+}
+
+#name:hover {
+	color: var(--cyan);
+}
+
+@media (max-width: 375px) {
+	#image {
+		height: 40vh;
+	}
 }
